@@ -1,0 +1,8 @@
+LIBRARY "samp_plus"
+EXPORTS
+	Supports
+	ProcessTick
+	Load
+	Unload
+	AmxLoad
+	AmxUnload

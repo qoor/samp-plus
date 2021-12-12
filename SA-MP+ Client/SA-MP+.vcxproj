@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{01492B2D-BDF0-450C-9A8F-2FFC77C4C0CA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SAMP</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SA-MP+ Client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>SA-MP_Plus</TargetName>
+    <TargetExt>.asi</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>SA-MP_Plus</TargetName>
+    <TargetExt>.asi</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;DIRECTINPUT_VERSION#0x0800;_WIN32_WINNT#0x0500;WIN32;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;SAMP_PLUS_CLIENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\Shared;$(SolutionDir)\Shared\sdk;$(SolutionDir)\vendor\sparsehash\src;$(ProjectDir)\sdk;$(ProjectDir)\game_sa;$(ProjectDir)\multiplayer_sa;$(SolutionDir)\vendor</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;Detours\detours.lib;DirectX\d3dx9.lib;DirectX\dinput8.lib;multiplayer_sa\multiplayer_sa.lib;RakNet\RakNet_Debug.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\C++ Projects\SA-MP+\Library</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;SAMP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>DIRECTINPUT_VERSION#0x0800;_WIN32_WINNT#0x0500;WIN32;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;SAMP_PLUS_CLIENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\Shared;$(SolutionDir)\Shared\sdk;$(SolutionDir)\vendor\sparsehash\src;$(ProjectDir)\sdk;$(ProjectDir)\game_sa;$(ProjectDir)\multiplayer_sa;$(SolutionDir)\vendor</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;Detours\detours.lib;DirectX\d3dx9.lib;DirectX\dinput8.lib;multiplayer_sa\multiplayer_sa.lib;RakNet\RakNet_Release.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\C++ Projects\SA-MP+\Library</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;SAMP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Client\Client3DMarker.h" />
+    <ClInclude Include="Client\ClientCheckpoint.h" />
+    <ClInclude Include="Client\ClientCorona.h" />
+    <ClInclude Include="Client\ClientEntity.h" />
+    <ClInclude Include="Client\ClientEntityBase.h" />
+    <ClInclude Include="Client\ClientGame.h" />
+    <ClInclude Include="Client\ClientManager.h" />
+    <ClInclude Include="Client\ClientMarker.h" />
+    <ClInclude Include="Client\ClientMarkerCommon.h" />
+    <ClInclude Include="Client\ClientMarkerManager.h" />
+    <ClInclude Include="Client\ClientStreamElement.h" />
+    <ClInclude Include="Client\ClientStreamer.h" />
+    <ClInclude Include="Client\ClientStreamSector.h" />
+    <ClInclude Include="Client\ClientStreamSectorRow.h" />
+    <ClInclude Include="Client\Enums.h" />
+    <ClInclude Include="Client\rpc\MarkerRPCs.h" />
+    <ClInclude Include="Client\rpc\RPCFunctions.h" />
+    <ClInclude Include="Client\rpc\WorldRPCs.h" />
+    <ClInclude Include="Client\StaticFunctionDefinations.h" />
+    <ClInclude Include="Client\Utils.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="CSAMP.h" />
+    <ClInclude Include="CSAMPStruct.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="PoolManager.h" />
+    <ClInclude Include="Proxy\CD3D9DeviceProxy.h" />
+    <ClInclude Include="Proxy\CD3D9Proxy.h" />
+    <ClInclude Include="Proxy\CDirect3DEvents9.h" />
+    <ClInclude Include="Proxy\CDirect3DHook9.h" />
+    <ClInclude Include="Proxy\CDirect3DHookManager.h" />
+    <ClInclude Include="Proxy\CDirectInputHook8.h" />
+    <ClInclude Include="Proxy\CDirectInputHookManager.h" />
+    <ClInclude Include="Proxy\CProxyDirectInput8.h" />
+    <ClInclude Include="Proxy\CProxyDirectInputDevice8.h" />
+    <ClInclude Include="sdk\CSingleton.h" />
+    <ClInclude Include="sdk\game\C3DMarker.h" />
+    <ClInclude Include="sdk\game\C3DMarkers.h" />
+    <ClInclude Include="sdk\game\CAEAudioHardware.h" />
+    <ClInclude Include="sdk\game\CAERadioTrackManager.h" />
+    <ClInclude Include="sdk\game\CAESoundManager.h" />
+    <ClInclude Include="sdk\game\CAEVehicleAudioEntity.h" />
+    <ClInclude Include="sdk\game\CAnimBlendAssocGroup.h" />
+    <ClInclude Include="sdk\game\CAnimBlendAssociation.h" />
+    <ClInclude Include="sdk\game\CAnimBlendHierarchy.h" />
+    <ClInclude Include="sdk\game\CAnimBlendSequence.h" />
+    <ClInclude Include="sdk\game\CAnimBlendStaticAssociation.h" />
+    <ClInclude Include="sdk\game\CAnimBlock.h" />
+    <ClInclude Include="sdk\game\CAnimManager.h" />
+    <ClInclude Include="sdk\game\CAudioContainer.h" />
+    <ClInclude Include="sdk\game\CAudioEngine.h" />
+    <ClInclude Include="sdk\game\CAutomobile.h" />
+    <ClInclude Include="sdk\game\CBike.h" />
+    <ClInclude Include="sdk\game\CBmx.h" />
+    <ClInclude Include="sdk\game\CBoat.h" />
+    <ClInclude Include="sdk\game\CBuilding.h" />
+    <ClInclude Include="sdk\game\CCam.h" />
+    <ClInclude Include="sdk\game\CCamera.h" />
+    <ClInclude Include="sdk\game\CCarEnterExit.h" />
+    <ClInclude Include="sdk\game\CCarGenerator.h" />
+    <ClInclude Include="sdk\game\CCheckpoint.h" />
+    <ClInclude Include="sdk\game\CCheckpoints.h" />
+    <ClInclude Include="sdk\game\CCivilianPed.h" />
+    <ClInclude Include="sdk\game\CClock.h" />
+    <ClInclude Include="sdk\game\CColModel.h" />
+    <ClInclude Include="sdk\game\CColPoint.h" />
+    <ClInclude Include="sdk\game\CControllerConfigManager.h" />
+    <ClInclude Include="sdk\game\CCoronas.h" />
+    <ClInclude Include="sdk\game\CDamageManager.h" />
+    <ClInclude Include="sdk\game\CDoor.h" />
+    <ClInclude Include="sdk\game\CEntity.h" />
+    <ClInclude Include="sdk\game\CEvent.h" />
+    <ClInclude Include="sdk\game\CEventDamage.h" />
+    <ClInclude Include="sdk\game\CEventGroup.h" />
+    <ClInclude Include="sdk\game\CEventGunShot.h" />
+    <ClInclude Include="sdk\game\CEventList.h" />
+    <ClInclude Include="sdk\game\CExplosion.h" />
+    <ClInclude Include="sdk\game\CExplosionManager.h" />
+    <ClInclude Include="sdk\game\CFire.h" />
+    <ClInclude Include="sdk\game\CFireManager.h" />
+    <ClInclude Include="sdk\game\CFont.h" />
+    <ClInclude Include="sdk\game\CFx.h" />
+    <ClInclude Include="sdk\game\CFxManager.h" />
+    <ClInclude Include="sdk\game\CFxSystem.h" />
+    <ClInclude Include="sdk\game\CGame.h" />
+    <ClInclude Include="sdk\game\CGarage.h" />
+    <ClInclude Include="sdk\game\CGarages.h" />
+    <ClInclude Include="sdk\game\CHandlingEntry.h" />
+    <ClInclude Include="sdk\game\CHandlingManager.h" />
+    <ClInclude Include="sdk\game\CHud.h" />
+    <ClInclude Include="sdk\game\CKeyGen.h" />
+    <ClInclude Include="sdk\game\CMarker.h" />
+    <ClInclude Include="sdk\game\CMenuManager.h" />
+    <ClInclude Include="sdk\game\CModelInfo.h" />
+    <ClInclude Include="sdk\game\CMonsterTruck.h" />
+    <ClInclude Include="sdk\game\CObject.h" />
+    <ClInclude Include="sdk\game\Common.h" />
+    <ClInclude Include="sdk\game\CPad.h" />
+    <ClInclude Include="sdk\game\CParticle.h" />
+    <ClInclude Include="sdk\game\CParticleObject.h" />
+    <ClInclude Include="sdk\game\CParticleSystemManager.h" />
+    <ClInclude Include="sdk\game\CPathFind.h" />
+    <ClInclude Include="sdk\game\CPed.h" />
+    <ClInclude Include="sdk\game\CPedDamageResponse.h" />
+    <ClInclude Include="sdk\game\CPedDamageResponseCalculator.h" />
+    <ClInclude Include="sdk\game\CPedIK.h" />
+    <ClInclude Include="sdk\game\CPedIntelligence.h" />
+    <ClInclude Include="sdk\game\CPedModelInfo.h" />
+    <ClInclude Include="sdk\game\CPedSound.h" />
+    <ClInclude Include="sdk\game\CPhysical.h" />
+    <ClInclude Include="sdk\game\CPickup.h" />
+    <ClInclude Include="sdk\game\CPickups.h" />
+    <ClInclude Include="sdk\game\CPlane.h" />
+    <ClInclude Include="sdk\game\CPlayerInfo.h" />
+    <ClInclude Include="sdk\game\CPlayerPed.h" />
+    <ClInclude Include="sdk\game\CPointLights.h" />
+    <ClInclude Include="sdk\game\CPools.h" />
+    <ClInclude Include="sdk\game\CPopulation.h" />
+    <ClInclude Include="sdk\game\CProjectile.h" />
+    <ClInclude Include="sdk\game\CProjectileInfo.h" />
+    <ClInclude Include="sdk\game\CQuadBike.h" />
+    <ClInclude Include="sdk\game\CRadar.h" />
+    <ClInclude Include="sdk\game\CRegisteredCorona.h" />
+    <ClInclude Include="sdk\game\CRemote.h" />
+    <ClInclude Include="sdk\game\CRenderWare.h" />
+    <ClInclude Include="sdk\game\CRestart.h" />
+    <ClInclude Include="sdk\game\CRopes.h" />
+    <ClInclude Include="sdk\game\CSettings.h" />
+    <ClInclude Include="sdk\game\CStats.h" />
+    <ClInclude Include="sdk\game\CStreaming.h" />
+    <ClInclude Include="sdk\game\CTaskManagementSystem.h" />
+    <ClInclude Include="sdk\game\CTaskManager.h" />
+    <ClInclude Include="sdk\game\CTasks.h" />
+    <ClInclude Include="sdk\game\CText.h" />
+    <ClInclude Include="sdk\game\CTheCarGenerators.h" />
+    <ClInclude Include="sdk\game\CTrailer.h" />
+    <ClInclude Include="sdk\game\CVehicle.h" />
+    <ClInclude Include="sdk\game\CVehicleScanner.h" />
+    <ClInclude Include="sdk\game\CVisibilityPlugins.h" />
+    <ClInclude Include="sdk\game\CWanted.h" />
+    <ClInclude Include="sdk\game\CWater.h" />
+    <ClInclude Include="sdk\game\CWaterManager.h" />
+    <ClInclude Include="sdk\game\CWeapon.h" />
+    <ClInclude Include="sdk\game\CWeaponInfo.h" />
+    <ClInclude Include="sdk\game\CWeaponStat.h" />
+    <ClInclude Include="sdk\game\CWeaponStatManager.h" />
+    <ClInclude Include="sdk\game\CWeather.h" />
+    <ClInclude Include="sdk\game\CWorld.h" />
+    <ClInclude Include="sdk\game\RenderWare.h" />
+    <ClInclude Include="sdk\game\RenderWareD3D.h" />
+    <ClInclude Include="sdk\game\Task.h" />
+    <ClInclude Include="sdk\game\TaskAttack.h" />
+    <ClInclude Include="sdk\game\TaskBasic.h" />
+    <ClInclude Include="sdk\game\TaskCar.h" />
+    <ClInclude Include="sdk\game\TaskCarAccessories.h" />
+    <ClInclude Include="sdk\game\TaskGoTo.h" />
+    <ClInclude Include="sdk\game\TaskIK.h" />
+    <ClInclude Include="sdk\game\TaskJumpFall.h" />
+    <ClInclude Include="sdk\game\TaskPhysicalResponse.h" />
+    <ClInclude Include="sdk\game\TaskSecondary.h" />
+    <ClInclude Include="sdk\game\TaskTypes.h" />
+    <ClInclude Include="sdk\ijsify.h" />
+    <ClInclude Include="sdk\multiplayer\CLimits.h" />
+    <ClInclude Include="sdk\multiplayer\CMultiplayer.h" />
+    <ClInclude Include="sdk\multiplayer\CPopulationMP.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="StdInc.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Shared\SA-MP+\Debug.cpp" />
+    <ClCompile Include="..\Shared\SA-MP+\RPC.cpp" />
+    <ClCompile Include="Client\Client3DMarker.cpp" />
+    <ClCompile Include="Client\ClientCheckpoint.cpp" />
+    <ClCompile Include="Client\ClientCorona.cpp" />
+    <ClCompile Include="Client\ClientEntity.cpp" />
+    <ClCompile Include="Client\ClientGame.cpp" />
+    <ClCompile Include="Client\ClientManager.cpp" />
+    <ClCompile Include="Client\ClientMarker.cpp" />
+    <ClCompile Include="Client\ClientMarkerCommon.cpp" />
+    <ClCompile Include="Client\ClientMarkerManager.cpp" />
+    <ClCompile Include="Client\ClientStreamElement.cpp" />
+    <ClCompile Include="Client\ClientStreamer.cpp" />
+    <ClCompile Include="Client\ClientStreamSector.cpp" />
+    <ClCompile Include="Client\ClientStreamSectorRow.cpp" />
+    <ClCompile Include="Client\Enums.cpp" />
+    <ClCompile Include="Client\rpc\MarkerRPCs.cpp" />
+    <ClCompile Include="Client\rpc\RPCFunctions.cpp" />
+    <ClCompile Include="Client\rpc\WorldRPCs.cpp" />
+    <ClCompile Include="Client\StaticFunctionDefinations.cpp" />
+    <ClCompile Include="Client\Utils.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="CSAMP.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="Network.cpp" />
+    <ClCompile Include="plugin.cpp" />
+    <ClCompile Include="PoolManager.cpp" />
+    <ClCompile Include="Proxy\CD3D9DeviceProxy.cpp" />
+    <ClCompile Include="Proxy\CD3D9Proxy.cpp" />
+    <ClCompile Include="Proxy\CDirect3DEvents9.cpp" />
+    <ClCompile Include="Proxy\CDirect3DHook9.cpp" />
+    <ClCompile Include="Proxy\CDirect3DHookManager.cpp" />
+    <ClCompile Include="Proxy\CDirectInputHook8.cpp" />
+    <ClCompile Include="Proxy\CDirectInputHookManager.cpp" />
+    <ClCompile Include="Proxy\CProxyDirectInput8.cpp" />
+    <ClCompile Include="Proxy\CProxyDirectInputDevice8.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="StdInc.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Shared">
+      <UniqueIdentifier>{d5028fed-713c-44df-810c-025f732ed8fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Shared\SA-MP+">
+      <UniqueIdentifier>{887f3b22-b5ee-458a-b505-2551ddfb4502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Proxy">
+      <UniqueIdentifier>{28b3c2f2-854c-481d-ba03-769335981abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Proxy\소스 파일">
+      <UniqueIdentifier>{cfdcb0b3-153a-4016-89e0-0e88dd180f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Proxy\헤더 파일">
+      <UniqueIdentifier>{21b68743-3e46-4cc3-8edd-ead469139ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\sdk">
+      <UniqueIdentifier>{66218aec-0f36-496e-ae99-d159195661b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\sdk\game">
+      <UniqueIdentifier>{7aa47ebd-9ac4-40a0-8f18-1c19683a4d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\sdk\multiplayer">
+      <UniqueIdentifier>{a75bd5a7-8a74-4a45-bfd6-f50df6b43391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Client">
+      <UniqueIdentifier>{b12b5da4-20b3-412f-8b95-ff4b4f370f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Client\소스 파일">
+      <UniqueIdentifier>{212904e9-390d-44cc-a7fd-7096fbc59006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Client\헤더 파일">
+      <UniqueIdentifier>{7c5037db-447d-406f-8ec9-370d745db876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Client\소스 파일\rpc">
+      <UniqueIdentifier>{086351c4-bcd3-4265-bab2-5867e81b8e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Client\헤더 파일\rpc">
+      <UniqueIdentifier>{0010f410-f247-4564-a9f9-299557573451}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CDirect3DHookManager.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CDirect3DHook9.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CDirectInputHookManager.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CDirectInputHook8.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CProxyDirectInput8.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CProxyDirectInputDevice8.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CD3D9DeviceProxy.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CD3D9Proxy.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdInc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CSingleton.h">
+      <Filter>헤더 파일\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\ijsify.h">
+      <Filter>헤더 파일\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\C3DMarker.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\C3DMarkers.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAEAudioHardware.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAERadioTrackManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAESoundManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAEVehicleAudioEntity.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAnimBlendAssocGroup.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAnimBlendAssociation.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAnimBlendHierarchy.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAnimBlendSequence.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAnimBlendStaticAssociation.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAnimBlock.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAnimManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAudioContainer.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAudioEngine.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CAutomobile.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CBike.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CBmx.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CBoat.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CBuilding.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCam.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCamera.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCarEnterExit.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCarGenerator.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCheckpoint.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCheckpoints.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCivilianPed.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CClock.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CColModel.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CColPoint.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CControllerConfigManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CCoronas.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CDamageManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CDoor.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CEntity.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CEvent.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CEventDamage.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CEventGroup.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CEventGunShot.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CEventList.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CExplosion.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CExplosionManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CFire.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CFireManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CFont.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CFx.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CFxManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CFxSystem.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CGame.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CGarage.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CGarages.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CHandlingEntry.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CHandlingManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CHud.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CKeyGen.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CMarker.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CMenuManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CModelInfo.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CMonsterTruck.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CObject.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\Common.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPad.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CParticle.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CParticleObject.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CParticleSystemManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPathFind.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPed.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPedDamageResponse.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPedDamageResponseCalculator.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPedIK.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPedIntelligence.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPedModelInfo.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPedSound.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPhysical.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPickup.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPickups.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPlane.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPlayerInfo.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPlayerPed.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPointLights.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPools.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CPopulation.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CProjectile.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CProjectileInfo.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CQuadBike.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CRadar.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CRegisteredCorona.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CRemote.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CRenderWare.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CRestart.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CRopes.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CSettings.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CStats.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CStreaming.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CTaskManagementSystem.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CTaskManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CTasks.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CText.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CTheCarGenerators.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CTrailer.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CVehicle.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CVehicleScanner.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CVisibilityPlugins.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWanted.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWater.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWaterManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWeapon.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWeaponInfo.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWeaponStat.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWeaponStatManager.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWeather.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\CWorld.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\RenderWare.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\RenderWareD3D.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\Task.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskAttack.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskBasic.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskCar.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskCarAccessories.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskGoTo.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskIK.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskJumpFall.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskPhysicalResponse.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskSecondary.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\game\TaskTypes.h">
+      <Filter>헤더 파일\sdk\game</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\multiplayer\CLimits.h">
+      <Filter>헤더 파일\sdk\multiplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\multiplayer\CMultiplayer.h">
+      <Filter>헤더 파일\sdk\multiplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\multiplayer\CPopulationMP.h">
+      <Filter>헤더 파일\sdk\multiplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\CDirect3DEvents9.h">
+      <Filter>소스 파일\Proxy\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSAMPStruct.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CSAMP.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\rpc\RPCFunctions.h">
+      <Filter>소스 파일\Client\헤더 파일\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\rpc\WorldRPCs.h">
+      <Filter>소스 파일\Client\헤더 파일\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\rpc\MarkerRPCs.h">
+      <Filter>소스 파일\Client\헤더 파일\rpc</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Client3DMarker.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientCheckpoint.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientCorona.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientEntity.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientEntityBase.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientGame.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientManager.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientMarker.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientMarkerCommon.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientMarkerManager.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientStreamElement.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientStreamer.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientStreamSector.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientStreamSectorRow.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Enums.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\StaticFunctionDefinations.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Utils.h">
+      <Filter>소스 파일\Client\헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="plugin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\SA-MP+\RPC.cpp">
+      <Filter>소스 파일\Shared\SA-MP+</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\SA-MP+\Debug.cpp">
+      <Filter>소스 파일\Shared\SA-MP+</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CDirect3DHookManager.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CDirect3DHook9.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CDirectInputHookManager.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CDirectInputHook8.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CProxyDirectInput8.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CProxyDirectInputDevice8.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CD3D9DeviceProxy.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CD3D9Proxy.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StdInc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PoolManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\CDirect3DEvents9.cpp">
+      <Filter>소스 파일\Proxy\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CSAMP.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\rpc\WorldRPCs.cpp">
+      <Filter>소스 파일\Client\소스 파일\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\rpc\RPCFunctions.cpp">
+      <Filter>소스 파일\Client\소스 파일\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\rpc\MarkerRPCs.cpp">
+      <Filter>소스 파일\Client\소스 파일\rpc</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Client3DMarker.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientCheckpoint.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientCorona.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientEntity.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientGame.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientManager.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientMarker.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientMarkerCommon.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientMarkerManager.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientStreamElement.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientStreamer.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientStreamSector.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientStreamSectorRow.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Enums.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\StaticFunctionDefinations.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Utils.cpp">
+      <Filter>소스 파일\Client\소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

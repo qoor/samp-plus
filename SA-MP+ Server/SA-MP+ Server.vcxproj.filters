@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\logic">
+      <UniqueIdentifier>{cc3b6103-c156-489f-a994-deb210615f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\logic">
+      <UniqueIdentifier>{685f2e30-fc24-4eba-9fe1-34619779d790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Defination">
+      <UniqueIdentifier>{411e90e0-fb3a-4231-9cc3-d50c92548905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\logic\packets">
+      <UniqueIdentifier>{8ac887b4-170d-4b66-9ab8-fdd4d0682f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\logic\packets">
+      <UniqueIdentifier>{0faf189a-6bf8-417d-864f-2adeb4d79cb7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdInc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\Game.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\Packet.h">
+      <Filter>헤더 파일\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\PacketTranslator.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\PlayerManager.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\PedManager.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\Player.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\Ped.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\Element.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\packets\PlayerJoinDataPacket.h">
+      <Filter>헤더 파일\logic\packets</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\RPCFunctions.h">
+      <Filter>헤더 파일\logic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdInc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\Game.cpp">
+      <Filter>소스 파일\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\PacketTranslator.cpp">
+      <Filter>소스 파일\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\PlayerManager.cpp">
+      <Filter>소스 파일\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\Player.cpp">
+      <Filter>소스 파일\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\PedManager.cpp">
+      <Filter>소스 파일\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\Ped.cpp">
+      <Filter>소스 파일\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\packets\PlayerJoinDataPacket.cpp">
+      <Filter>소스 파일\logic\packets</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\RPCFunctions.cpp">
+      <Filter>소스 파일\logic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SA-MP+ Server.def">
+      <Filter>소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>

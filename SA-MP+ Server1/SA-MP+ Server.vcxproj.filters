@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\sampgdk">
+      <UniqueIdentifier>{3ca5aa6e-e99f-4c52-979d-a03d1c54765b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\sampgdk\amx">
+      <UniqueIdentifier>{325edfce-969f-4068-a495-27ff7a746172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Shared">
+      <UniqueIdentifier>{a5c363fe-1356-4c29-bbb4-115220c7dc31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Shared\RakNet">
+      <UniqueIdentifier>{60399b2f-8dd4-4364-8d3e-98a0928c838b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\AMX">
+      <UniqueIdentifier>{1a2de191-bb2a-49e4-b89b-a1e534ace206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\AMX\amx">
+      <UniqueIdentifier>{cb1972a0-1657-48ef-8248-abce1e8e38f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\sampgdk">
+      <UniqueIdentifier>{27d36bb7-b514-4389-af6f-cb92c21809fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\sampgdk\amx">
+      <UniqueIdentifier>{9d5c8f83-acef-4e45-b183-cdaf4f365824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Shared">
+      <UniqueIdentifier>{0e04ae3a-94d9-481e-ad91-550eed7da911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Shared\SA-MP+">
+      <UniqueIdentifier>{c2ec4eb9-6ca2-4cdf-a703-2a46d452b84a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Shared\SA-MP+">
+      <UniqueIdentifier>{b9168296-fc82-44c9-8932-58348c689206}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Native.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Callback.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocketInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IdAllocator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\_FindFirst.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\AutopatcherPatchContext.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\AutopatcherRepositoryInterface.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Base64Encoder.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\BitStream.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CCRakNetSlidingWindow.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CCRakNetUDT.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CheckSum.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CloudClient.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CloudCommon.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CloudServer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\CommandParserInterface.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ConnectionGraph2.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ConsoleServer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DataCompressor.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DirectoryDeltaTransfer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DR_SHA1.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_BinarySearchTree.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_BPlusTree.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_BytePool.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_ByteQueue.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Hash.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Heap.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_HuffmanEncodingTree.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_HuffmanEncodingTreeFactory.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_HuffmanEncodingTreeNode.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_LinkedList.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_List.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Map.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_MemoryPool.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Multilist.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_OrderedChannelHeap.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_OrderedList.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Queue.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_QueueLinkedList.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_RangeList.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Table.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_ThreadsafeAllocatingQueue.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_Tree.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DS_WeightedGraph.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\DynDNS.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\EmailSender.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\EmptyHeader.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\EpochTimeToString.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Export.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileList.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileListNodeContext.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileListTransfer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileListTransferCBInterface.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FileOperations.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FormatString.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\FullyConnectedMesh2.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Getche.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Gets.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\GetTime.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\gettimeofday.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\GridSectorizer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\HTTPConnection.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\HTTPConnection2.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\IncrementalReadInterface.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\InternalPacket.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Itoa.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Kbhit.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\LinuxStrings.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\LocklessTypes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\LogCommandParser.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\MessageFilter.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\MessageIdentifiers.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\MTUSize.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NativeFeatureIncludes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NativeFeatureIncludesOverrides.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NativeTypes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatPunchthroughClient.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatPunchthroughServer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatTypeDetectionClient.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatTypeDetectionCommon.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NatTypeDetectionServer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NetworkIDManager.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\NetworkIDObject.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketConsoleLogger.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketFileLogger.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketizedTCP.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketLogger.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketOutputWindowLogger.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketPool.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PacketPriority.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PluginInterface2.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PS3Includes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\PS4Includes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Rackspace.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakAlloca.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakAssert.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakMemoryOverride.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetCommandParser.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetDefines.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetDefinesOverrides.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetSmartPtr.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetSocket.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetSocket2.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetStatistics.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetTime.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetTransport2.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetTypes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakNetVersion.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakPeer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakPeerInterface.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakSleep.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakString.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakThread.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RakWString.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Rand.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RandSync.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReadyEvent.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RefCountedObj.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RelayPlugin.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReliabilityLayer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReplicaEnums.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ReplicaManager3.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\Router2.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\RPC4Plugin.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SecureHandshake.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SendToThread.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SignaledEvent.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SimpleMutex.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SimpleTCPServer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SingleProducerConsumer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SocketDefines.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SocketIncludes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SocketLayer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\StatisticsHistory.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\StringCompressor.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\StringTable.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\SuperFastHash.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TableSerializer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TCPInterface.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TeamBalancer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TeamManager.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TelnetTransport.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ThreadPool.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\ThreadsafePacketLogger.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TransportInterface.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\TwoWayAuthentication.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPForwarder.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyClient.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyCommon.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyCoordinator.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\UDPProxyServer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VariableDeltaSerializer.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VariableListDeltaTracker.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VariadicSQLParser.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\VitaIncludes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\WindowsIncludes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\WSAStartupSingleton.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\RakNet\XBox360Includes.h">
+      <Filter>헤더 파일\Shared\RakNet</Filter>
+    </ClInclude>
+    <ClInclude Include="AMX\plugincommon.h">
+      <Filter>헤더 파일\AMX</Filter>
+    </ClInclude>
+    <ClInclude Include="AMX\amx\amx.h">
+      <Filter>헤더 파일\AMX\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="AMX\amx\amx2.h">
+      <Filter>헤더 파일\AMX\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="AMX\amx\getch.h">
+      <Filter>헤더 파일\AMX\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="AMX\amx\sclinux.h">
+      <Filter>헤더 파일\AMX\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\a_actor.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\a_http.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\a_objects.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\a_players.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\a_samp.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\a_vehicles.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\bool.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\core.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\export.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\interop.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\platform.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\plugincommon.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\sdk.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\types.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\version.h">
+      <Filter>헤더 파일\sampgdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\amx\amx.h">
+      <Filter>헤더 파일\sampgdk\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\amx\amx2.h">
+      <Filter>헤더 파일\sampgdk\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\amx\getch.h">
+      <Filter>헤더 파일\sampgdk\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="sampgdk\sampgdk\amx\sclinux.h">
+      <Filter>헤더 파일\sampgdk\amx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\SA-MP+\Debug.h">
+      <Filter>헤더 파일\Shared\SA-MP+</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\SA-MP+\PacketType.h">
+      <Filter>헤더 파일\Shared\SA-MP+</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\SA-MP+\RPC.h">
+      <Filter>헤더 파일\Shared\SA-MP+</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdInc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="plugin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Native.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sampgdk\sampgdk\amxplugin.cpp">
+      <Filter>소스 파일\sampgdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sampgdk\sampgdk\amxplugin2.cpp">
+      <Filter>소스 파일\sampgdk</Filter>
+    </ClCompile>
+    <ClCompile Include="Callback.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="IdAllocator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\SA-MP+\Debug.cpp">
+      <Filter>소스 파일\Shared\SA-MP+</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\SA-MP+\RPC.cpp">
+      <Filter>소스 파일\Shared\SA-MP+</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SA-MP+ Server.def">
+      <Filter>소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>
